@@ -23,14 +23,10 @@ func (a *American) Greeting() {
 	fmt.Println("hello!")
 }
 
-func HumanGreeting(h Human) {
-	h.Greeting()
-}
-
 func main() {
 	j := new(Japanese)
-	HumanGreeting(j)
+	Human.Greeting(j)
 
 	a := new(American)
-	HumanGreeting(a)
+	Human.Greeting(a)
 }
